@@ -1,37 +1,43 @@
 /* ==========================================================================
    SRADHA PANIGRAHI — Electrical & Electronics Engineering Portfolio
    Design Philosophy: High-Voltage Precision & Power Grid Instrumentation.
-   Combining mathematical rigor, clean engineering schematics, and Apple/Vercel-grade polish.
+   Color Palette: Modern VIBE2CODE Engineering System:
+     - #071A4A : Deep Midnight Navy (Primary Base / Headings / Dark Mode Card)
+     - #4B5563 : Cool Slate Gray (Secondary / Subtext)
+     - #E5E7EB : Light Gray (Borders / Dividers / Recessed Surfaces)
+     - #F8FAFC : Slate Off-White (Light Mode Canvas / Pure Surface)
+     - #87E52C : Electric Lime / Chartreuse (High-Energy Accent / Primary Action)
    ========================================================================== */
 
 /* ---------- Color & Typography Tokens ---------- */
 :root {
-  /* Drafting Paper / Blueprint Light Mode */
-  --bg-primary: #f8fafc;
-  --bg-card: #ffffff;
-  --bg-recessed: #f1f5f9;
-  --bg-elevated: #e2e8f0;
+  /* VIBE2CODE Clean Precision Light Palette */
+  --bg-primary: #F8FAFC;         /* Swatch #F8FAFC */
+  --bg-card: #FFFFFF;
+  --bg-recessed: #F1F5F9;
+  --bg-elevated: #E5E7EB;        /* Swatch #E5E7EB */
   
-  --line: rgba(15, 23, 42, 0.12);
-  --line-strong: rgba(15, 23, 42, 0.22);
-  --line-soft: rgba(15, 23, 42, 0.06);
+  --line: rgba(7, 26, 74, 0.10);
+  --line-strong: rgba(7, 26, 74, 0.18);
+  --line-soft: rgba(7, 26, 74, 0.05);
   
-  --text-main: #0f172a;
-  --text-muted: #475569;
-  --text-faint: #64748b;
+  --text-main: #071A4A;          /* Swatch #071A4A */
+  --text-muted: #4B5563;         /* Swatch #4B5563 */
+  --text-faint: #6B7280;
   
   /* Domain Accent Colors */
-  --accent-voltage: #0284c7;   /* Electric Cobalt / Cyan */
-  --accent-voltage-glow: rgba(2, 132, 199, 0.2);
-  --accent-energy: #059669;    /* Clean Renewable Emerald */
-  --accent-energy-glow: rgba(5, 150, 105, 0.2);
-  --accent-amber: #d97706;     /* Transformer / Hazard Amber */
+  --accent-voltage: #87E52C;     /* Swatch #87E52C Electric Lime */
+  --accent-voltage-glow: rgba(135, 229, 44, 0.25);
+  --accent-energy: #87E52C;
+  --accent-energy-glow: rgba(135, 229, 44, 0.25);
+  --accent-navy: #071A4A;        /* Swatch #071A4A */
+  --accent-amber: #D97706;       /* Transformer / Hazard Amber */
   --accent-amber-glow: rgba(217, 119, 6, 0.2);
-  --accent-purple: #7c3aed;    /* Multiphysics / Quantum */
+  --accent-purple: #071A4A;      /* Deep Navy brand accent */
   
-  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.08), 0 2px 4px rgba(15, 23, 42, 0.04);
-  --shadow-lg: 0 16px 36px rgba(15, 23, 42, 0.12);
+  --shadow-sm: 0 1px 3px rgba(7, 26, 74, 0.06), 0 1px 2px rgba(7, 26, 74, 0.04);
+  --shadow-md: 0 4px 16px rgba(7, 26, 74, 0.08), 0 2px 4px rgba(7, 26, 74, 0.04);
+  --shadow-lg: 0 16px 36px rgba(7, 26, 74, 0.12);
 
   --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -49,31 +55,32 @@
 }
 
 html[data-theme="dark"] {
-  /* Obsidian Substation & High-Voltage Neon Mode */
-  --bg-primary: #080c14;
-  --bg-card: #0f1726;
-  --bg-recessed: #151f33;
-  --bg-elevated: #1e293b;
+  /* VIBE2CODE Midnight Navy & Electric Lime Dark Mode */
+  --bg-primary: #030A1C;         /* Deepest midnight navy foundation */
+  --bg-card: #071A4A;            /* Exact Swatch #071A4A */
+  --bg-recessed: #0A215C;        /* Rich elevated navy */
+  --bg-elevated: #0F2D7D;
   
-  --line: rgba(255, 255, 255, 0.09);
-  --line-strong: rgba(255, 255, 255, 0.18);
-  --line-soft: rgba(255, 255, 255, 0.04);
+  --line: rgba(229, 231, 235, 0.11);    /* Derived from Swatch #E5E7EB */
+  --line-strong: rgba(229, 231, 235, 0.20);
+  --line-soft: rgba(229, 231, 235, 0.05);
   
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-faint: #64748b;
+  --text-main: #F8FAFC;          /* Swatch #F8FAFC */
+  --text-muted: #CBD5E1;
+  --text-faint: #94A3B8;
   
-  --accent-voltage: #38bdf8;
-  --accent-voltage-glow: rgba(56, 189, 248, 0.28);
-  --accent-energy: #34d399;
-  --accent-energy-glow: rgba(52, 211, 153, 0.28);
-  --accent-amber: #fbbf24;
+  --accent-voltage: #87E52C;     /* Swatch #87E52C */
+  --accent-voltage-glow: rgba(135, 229, 44, 0.35);
+  --accent-energy: #87E52C;
+  --accent-energy-glow: rgba(135, 229, 44, 0.35);
+  --accent-navy: #071A4A;
+  --accent-amber: #FBBF24;
   --accent-amber-glow: rgba(251, 191, 36, 0.28);
-  --accent-purple: #a78bfa;
+  --accent-purple: #87E52C;
   
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.7);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.75);
   color-scheme: dark;
 }
 
@@ -166,7 +173,7 @@ p {
   pointer-events: none;
   z-index: 0;
   filter: blur(60px);
-  opacity: 0.6;
+  opacity: 0.55;
 }
 
 .scroll-progress {
@@ -174,7 +181,7 @@ p {
   top: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent-voltage), var(--accent-energy));
+  background: linear-gradient(90deg, var(--accent-voltage), #65a30d);
   width: 0%;
   z-index: 1000;
   transition: width 0.05s linear;
@@ -187,13 +194,13 @@ p {
   z-index: 900;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  background: rgba(248, 250, 252, 0.82);
+  background: rgba(248, 250, 252, 0.88);
   border-bottom: 1px solid var(--line);
   transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 
 html[data-theme="dark"] .site-nav {
-  background: rgba(8, 12, 20, 0.82);
+  background: rgba(7, 26, 74, 0.88);
 }
 
 .nav-inner {
@@ -218,8 +225,8 @@ html[data-theme="dark"] .site-nav {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: var(--accent-energy);
-  box-shadow: 0 0 10px var(--accent-energy);
+  background: var(--accent-voltage);
+  box-shadow: 0 0 10px var(--accent-voltage);
   position: relative;
 }
 
@@ -228,7 +235,7 @@ html[data-theme="dark"] .site-nav {
   position: absolute;
   inset: -3px;
   border-radius: 50%;
-  border: 1px solid var(--accent-energy);
+  border: 1px solid var(--accent-voltage);
   animation: pulse-ring 2s infinite ease-out;
 }
 
@@ -257,6 +264,11 @@ html[data-theme="dark"] .site-nav {
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--accent-voltage);
+}
+
+html[data-theme="light"] .nav-links a:hover,
+html[data-theme="light"] .nav-links a.active {
+  color: #4d8e12;
 }
 
 .nav-links a::after {
@@ -302,7 +314,7 @@ html[data-theme="dark"] .site-nav {
 
 .theme-toggle .icon-sun { display: none; }
 .theme-toggle .icon-moon { display: block; }
-html[data-theme="dark"] .theme-toggle .icon-sun { display: block; color: #fbbf24; }
+html[data-theme="dark"] .theme-toggle .icon-sun { display: block; color: var(--accent-voltage); }
 html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 .nav-toggle {
@@ -358,6 +370,10 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
   margin-bottom: 12px;
 }
 
+html[data-theme="light"] .eyebrow {
+  color: #4d8e12;
+}
+
 .eyebrow-dot {
   width: 6px;
   height: 6px;
@@ -366,7 +382,13 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 }
 
 .highlight {
-  background: linear-gradient(120deg, var(--accent-voltage), var(--accent-energy));
+  background: linear-gradient(120deg, #87E52C, #B7F56C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html[data-theme="light"] .highlight {
+  background: linear-gradient(120deg, #071A4A, #4d8e12);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -396,7 +418,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
   line-height: 1.6;
 }
 
-/* ---------- Buttons ---------- */
+/* ---------- Buttons (VIBE2CODE Styled) ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -404,7 +426,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
   gap: 10px;
   font-family: var(--font-mono);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.03em;
   padding: 12px 24px;
   border-radius: var(--radius-sm);
@@ -412,30 +434,33 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
   text-decoration: none;
 }
 
+/* Primary Button: Electric Lime with Midnight Navy Text (as shown in sample) */
 .btn-primary {
   background: var(--accent-voltage);
-  color: #ffffff;
+  color: #071A4A !important;
+  font-weight: 700;
   box-shadow: 0 4px 14px var(--accent-voltage-glow);
 }
 
 .btn-primary:hover {
-  background: #0274b0;
+  background: #76ce24;
+  color: #071A4A !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px var(--accent-voltage-glow);
-  color: #ffffff;
 }
 
 .btn-energy {
-  background: var(--accent-energy);
-  color: #ffffff;
-  box-shadow: 0 4px 14px var(--accent-energy-glow);
+  background: #071A4A;
+  color: #87E52C !important;
+  border: 1px solid #87E52C;
+  box-shadow: 0 4px 14px rgba(135, 229, 44, 0.2);
 }
 
 .btn-energy:hover {
-  background: #047857;
+  background: #0A215C;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px var(--accent-energy-glow);
-  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(135, 229, 44, 0.35);
+  color: #87E52C !important;
 }
 
 .btn-ghost {
@@ -449,6 +474,11 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
   color: var(--accent-voltage);
   transform: translateY(-2px);
   background: var(--bg-recessed);
+}
+
+html[data-theme="light"] .btn-ghost:hover {
+  border-color: #4d8e12;
+  color: #4d8e12;
 }
 
 .btn-sm {
@@ -480,9 +510,13 @@ html[data-theme="dark"] .hero-schematic {
 }
 
 .grid-busbar {
-  stroke: var(--accent-voltage);
+  stroke: var(--text-main);
   stroke-width: 2.5;
   stroke-linecap: round;
+}
+
+html[data-theme="dark"] .grid-busbar {
+  stroke: var(--accent-voltage);
 }
 
 .grid-line {
@@ -492,7 +526,7 @@ html[data-theme="dark"] .hero-schematic {
 }
 
 .grid-pulse {
-  stroke: var(--accent-energy);
+  stroke: var(--accent-voltage);
   stroke-width: 2;
   stroke-dasharray: 12 120;
   animation: grid-pulse-flow 8s linear infinite;
@@ -532,6 +566,10 @@ html[data-theme="dark"] .hero-schematic {
   font-family: var(--font-mono);
   font-size: 14px;
   color: var(--accent-voltage);
+}
+
+html[data-theme="light"] .hero-typewriter-box {
+  color: #4d8e12;
 }
 
 .typewriter-caret {
@@ -583,6 +621,10 @@ html[data-theme="dark"] .hero-schematic {
 
 .hero-contact-strip a:hover {
   color: var(--accent-voltage);
+}
+
+html[data-theme="light"] .hero-contact-strip a:hover {
+  color: #4d8e12;
 }
 
 /* Hero Portrait & Instrument Dial */
@@ -682,8 +724,8 @@ html[data-theme="dark"] .hero-schematic {
 }
 
 .orbit-dot-voltage { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-voltage); }
-.orbit-dot-energy { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-energy); }
-.orbit-dot-purple { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-purple); }
+.orbit-dot-energy { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-voltage); }
+.orbit-dot-purple { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-voltage); }
 
 /* ---------- INSTRUMENT PANEL / SPEC STRIP ---------- */
 .spec-strip {
@@ -742,7 +784,7 @@ html[data-theme="dark"] .hero-schematic {
 }
 
 .gauge-arc.energy-arc {
-  stroke: var(--accent-energy);
+  stroke: var(--accent-voltage);
 }
 
 .gauge-arc.amber-arc {
@@ -750,7 +792,7 @@ html[data-theme="dark"] .hero-schematic {
 }
 
 .gauge-arc.purple-arc {
-  stroke: var(--accent-purple);
+  stroke: var(--accent-voltage);
 }
 
 .spec-number {
@@ -766,6 +808,10 @@ html[data-theme="dark"] .hero-schematic {
   font-size: 13px;
   color: var(--accent-voltage);
   margin-left: 3px;
+}
+
+html[data-theme="light"] .spec-unit {
+  color: #4d8e12;
 }
 
 .spec-label {
@@ -794,7 +840,7 @@ html[data-theme="dark"] .hero-schematic {
   fill: none;
   stroke: var(--accent-voltage);
   stroke-width: 1.5;
-  opacity: 0.5;
+  opacity: 0.55;
 }
 
 /* ---------- PROJECTS & INNOVATION LOG ---------- */
@@ -849,6 +895,10 @@ html[data-theme="dark"] .hero-schematic {
   margin-bottom: 6px;
 }
 
+html[data-theme="light"] .project-tag {
+  color: #4d8e12;
+}
+
 .project-title {
   font-size: 21px;
   font-weight: 700;
@@ -873,20 +923,20 @@ html[data-theme="dark"] .hero-schematic {
 
 .tts-control-btn:hover {
   background: var(--accent-voltage);
-  color: #ffffff;
+  color: #071A4A;
   border-color: var(--accent-voltage);
 }
 
 .tts-control-btn.speaking {
-  background: var(--accent-energy);
-  color: #ffffff;
-  border-color: var(--accent-energy);
+  background: var(--accent-voltage);
+  color: #071A4A;
+  border-color: var(--accent-voltage);
   animation: pulse-audio 1.2s infinite alternate;
 }
 
 @keyframes pulse-audio {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
-  100% { transform: scale(1.08); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(135, 229, 44, 0.4); }
+  100% { transform: scale(1.08); box-shadow: 0 0 0 8px rgba(135, 229, 44, 0); }
 }
 
 /* Project Visual Preview */
@@ -913,7 +963,7 @@ html[data-theme="dark"] .hero-schematic {
   position: absolute;
   bottom: 12px;
   right: 12px;
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(7, 26, 74, 0.88);
   color: #ffffff;
   font-family: var(--font-mono);
   font-size: 11px;
@@ -923,6 +973,7 @@ html[data-theme="dark"] .hero-schematic {
   align-items: center;
   gap: 6px;
   backdrop-filter: blur(4px);
+  border: 1px solid rgba(135, 229, 44, 0.3);
 }
 
 .project-card-body {
@@ -966,9 +1017,15 @@ html[data-theme="dark"] .hero-schematic {
 }
 
 .tag-badge.tech-core {
-  background: var(--accent-voltage-glow);
-  color: var(--accent-voltage);
-  border-color: rgba(2, 132, 199, 0.25);
+  background: rgba(135, 229, 44, 0.16);
+  color: #87E52C;
+  border-color: rgba(135, 229, 44, 0.4);
+}
+
+html[data-theme="light"] .tag-badge.tech-core {
+  background: rgba(135, 229, 44, 0.18);
+  color: #3f780e;
+  border-color: rgba(135, 229, 44, 0.5);
 }
 
 .project-origin-footnote {
@@ -1015,6 +1072,10 @@ html[data-theme="dark"] .hero-schematic {
 .dossier-header h3 i {
   color: var(--accent-voltage);
   font-size: 20px;
+}
+
+html[data-theme="light"] .dossier-header h3 i {
+  color: #4d8e12;
 }
 
 /* Technical Tables */
@@ -1084,7 +1145,7 @@ html[data-theme="dark"] .hero-schematic {
 }
 
 .timeline-item.energy-node .timeline-dot {
-  background: var(--accent-energy);
+  background: var(--accent-voltage);
 }
 
 .timeline-item.amber-node .timeline-dot {
@@ -1102,6 +1163,10 @@ html[data-theme="dark"] .hero-schematic {
   font-size: 13.5px;
   color: var(--accent-voltage);
   margin: 3px 0 8px;
+}
+
+html[data-theme="light"] .timeline-org {
+  color: #4d8e12;
 }
 
 .timeline-date-badge {
@@ -1138,6 +1203,10 @@ html[data-theme="dark"] .hero-schematic {
   color: var(--accent-voltage);
 }
 
+html[data-theme="light"] .timeline-bullets li::before {
+  color: #4d8e12;
+}
+
 /* Competency Grid */
 .competency-grid {
   display: grid;
@@ -1164,6 +1233,10 @@ html[data-theme="dark"] .hero-schematic {
   gap: 8px;
 }
 
+html[data-theme="light"] .competency-box h4 {
+  color: #4d8e12;
+}
+
 .skills-badge-flow {
   display: flex;
   flex-wrap: wrap;
@@ -1178,6 +1251,11 @@ html[data-theme="dark"] .hero-schematic {
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   color: var(--text-main);
+  transition: border-color var(--transition-fast);
+}
+
+.skill-chip:hover {
+  border-color: var(--accent-voltage);
 }
 
 /* Honors & Certifications List */
@@ -1199,7 +1277,7 @@ html[data-theme="dark"] .hero-schematic {
 
 .honor-icon {
   font-size: 22px;
-  color: var(--accent-amber);
+  color: var(--accent-voltage);
   margin-top: 2px;
 }
 
@@ -1231,7 +1309,7 @@ html[data-theme="dark"] .hero-schematic {
   right: -20px;
   font-size: 180px;
   color: var(--accent-voltage);
-  opacity: 0.04;
+  opacity: 0.05;
   pointer-events: none;
 }
 
@@ -1274,6 +1352,11 @@ html[data-theme="dark"] .hero-schematic {
   color: var(--accent-voltage);
 }
 
+html[data-theme="light"] .target-uni-chip {
+  color: #071A4A;
+  border-color: rgba(7, 26, 74, 0.2);
+}
+
 .taiwan-pillars-box {
   background: var(--bg-card);
   border: 1px solid var(--line);
@@ -1292,7 +1375,7 @@ html[data-theme="dark"] .hero-schematic {
 
 .pillar-item i {
   font-size: 18px;
-  color: var(--accent-energy);
+  color: var(--accent-voltage);
   margin-top: 3px;
 }
 
@@ -1364,7 +1447,11 @@ html[data-theme="dark"] .hero-schematic {
 .template-btn:hover {
   border-color: var(--accent-voltage);
   background: var(--accent-voltage-glow);
-  color: var(--accent-voltage);
+  color: #071A4A;
+}
+
+html[data-theme="dark"] .template-btn:hover {
+  color: #87E52C;
 }
 
 .inquiry-form {
@@ -1460,7 +1547,7 @@ html[data-theme="dark"] .hero-schematic {
 
 .social-icon-btn:hover {
   background: var(--accent-voltage);
-  color: #ffffff;
+  color: #071A4A;
   border-color: var(--accent-voltage);
   transform: translateY(-2px);
 }
@@ -1495,6 +1582,10 @@ html[data-theme="dark"] .hero-schematic {
   color: var(--accent-voltage);
 }
 
+html[data-theme="light"] .footer-links-list a:hover {
+  color: #4d8e12;
+}
+
 .footer-contact-entry {
   display: flex;
   align-items: flex-start;
@@ -1507,6 +1598,10 @@ html[data-theme="dark"] .hero-schematic {
 .footer-contact-entry i {
   color: var(--accent-voltage);
   margin-top: 3px;
+}
+
+html[data-theme="light"] .footer-contact-entry i {
+  color: #4d8e12;
 }
 
 .footer-bottom-bar {
@@ -1524,7 +1619,7 @@ html[data-theme="dark"] .hero-schematic {
 .lightbox-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.88);
+  background: rgba(3, 10, 28, 0.92);
   backdrop-filter: blur(10px);
   z-index: 1200;
   display: flex;
@@ -1554,14 +1649,14 @@ html[data-theme="dark"] .hero-schematic {
   max-width: 100%;
   max-height: 78vh;
   border-radius: var(--radius-md);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(135, 229, 44, 0.3);
 }
 
 .lightbox-caption {
   font-family: var(--font-mono);
   font-size: 13.5px;
-  color: #f1f5f9;
+  color: #F8FAFC;
   margin-top: 14px;
   text-align: center;
 }
@@ -1583,7 +1678,8 @@ html[data-theme="dark"] .hero-schematic {
 }
 
 .lightbox-close-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--accent-voltage);
+  color: #071A4A;
 }
 
 /* ---------- TOAST NOTIFICATIONS ---------- */
@@ -1612,7 +1708,7 @@ html[data-theme="dark"] .hero-schematic {
 }
 
 .toast-notice i {
-  color: var(--accent-energy);
+  color: var(--accent-voltage);
   font-size: 16px;
 }
 
