@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
   const htmlRoot = document.documentElement;
 
-  // Initialize theme from localStorage or system preference
+  // Initialize theme from localStorage, default to light (96% white + 4% grey)
   const savedTheme = localStorage.getItem('sradha_portfolio_theme');
   if (savedTheme) {
     htmlRoot.setAttribute('data-theme', savedTheme);
-  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    htmlRoot.setAttribute('data-theme', 'dark');
+  } else {
+    htmlRoot.setAttribute('data-theme', 'light');
   }
 
   if (themeToggle) {

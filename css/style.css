@@ -11,11 +11,12 @@
 
 /* ---------- Color & Typography Tokens ---------- */
 :root {
-  /* VIBE2CODE Clean Precision Light Palette */
-  --bg-primary: #F8FAFC;         /* Swatch #F8FAFC */
+  /* 96% White and 4% Grey Combination */
+  --bg-primary: #f6f7f9;
+  --bg-primary: color-mix(in srgb, #ffffff 96%, #4b5563 4%);
   --bg-card: #FFFFFF;
-  --bg-recessed: #F1F5F9;
-  --bg-elevated: #E5E7EB;        /* Swatch #E5E7EB */
+  --bg-recessed: #eef0f4;
+  --bg-elevated: #E5E7EB;
   
   --line: rgba(7, 26, 74, 0.10);
   --line-strong: rgba(7, 26, 74, 0.18);
