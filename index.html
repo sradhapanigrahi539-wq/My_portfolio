@@ -287,11 +287,37 @@
         <div class="projects-grid">
 
           <!-- Project 1: Featured COMSOL ESP Simulation -->
-          <article class="project-card featured-card">
-            <div class="project-media-wrap" data-lightbox-src="assets/img/esp_sim.jpg" data-lightbox-caption="2D COMSOL Multiphysics Simulation: Electric Potential Gradient & Particle Tracing Trajectories in Electrostatic Precipitator (ESP)">
-              <img src="assets/img/esp_sim.jpg" alt="COMSOL Multiphysics ESP Simulation" loading="lazy" width="600" height="400" />
-              <div class="media-badge-overlay">
-                <i class="fa-solid fa-magnifying-glass-plus"></i> View 2D Simulation Vector Plot
+          <article class="project-card featured-card" id="project-esp">
+            <div class="featured-media-column">
+              <div class="project-media-wrap" id="esp-main-media" data-lightbox-src="assets/img/esp_particle_trajectories.jpg" data-lightbox-caption="COMSOL Multiphysics Simulation: Particle Tracing Trajectories (t = 1.7s) under 15kV Corona Discharge in 0.7m Precipitator Channel — Research Internship, IIT Bhubaneswar">
+                <img id="esp-main-img" src="assets/img/esp_particle_trajectories.jpg" alt="COMSOL Multiphysics Particle Trajectories Simulation" loading="lazy" width="600" height="400" />
+                <div class="media-badge-overlay" id="esp-badge-text">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> Particle Trajectories (t = 1.7s)
+                </div>
+              </div>
+
+              <!-- Multi-Plot COMSOL Simulation Selector -->
+              <div class="simulation-gallery-strip" aria-label="COMSOL Simulation Data Views">
+                <button type="button" class="sim-thumb active" data-img-src="assets/img/esp_particle_trajectories.jpg" data-caption="COMSOL Multiphysics: Particle Tracing Trajectories at t = 1.7s across 0.7m channel length with electrode boundary collection — IIT Bhubaneswar" data-badge="Particle Trajectories (t = 1.7s)">
+                  <img src="assets/img/esp_particle_trajectories.jpg" alt="Particle Trajectories" />
+                  <span>Trajectories</span>
+                </button>
+                <button type="button" class="sim-thumb" data-img-src="assets/img/esp_comsol_streamlines.jpg" data-caption="COMSOL Multiphysics Model Builder: Electric Potential (es) Streamlines &amp; Solver Architecture (-15kV boundary) — IIT Bhubaneswar" data-badge="Potential &amp; Streamlines">
+                  <img src="assets/img/esp_comsol_streamlines.jpg" alt="Electric Potential Streamlines" />
+                  <span>Streamlines</span>
+                </button>
+                <button type="button" class="sim-thumb" data-img-src="assets/img/esp_velocity_magnitude.jpg" data-caption="COMSOL Multiphysics: Velocity Magnitude (0 - 1.8 m/s) laminar fluid profile across 3 discharge electrode pins — IIT Bhubaneswar" data-badge="Velocity Field (0–1.8 m/s)">
+                  <img src="assets/img/esp_velocity_magnitude.jpg" alt="Velocity Magnitude Field" />
+                  <span>Velocity (m/s)</span>
+                </button>
+                <button type="button" class="sim-thumb" data-img-src="assets/img/esp_pressure_distribution.jpg" data-caption="COMSOL Multiphysics: Pressure distribution (-2.35 to +0.33 Pa) contour plot around pin electrodes — IIT Bhubaneswar" data-badge="Pressure Contours (Pa)">
+                  <img src="assets/img/esp_pressure_distribution.jpg" alt="Pressure Contours" />
+                  <span>Pressure (Pa)</span>
+                </button>
+                <button type="button" class="sim-thumb" data-img-src="assets/img/esp_electric_potential.jpg" data-caption="COMSOL Multiphysics 2D Plot Group: High-Voltage Electric Potential Surface Gradient (up to 15kV) — IIT Bhubaneswar" data-badge="Electric Potential (V)">
+                  <img src="assets/img/esp_electric_potential.jpg" alt="Electric Potential 2D Plot" />
+                  <span>Potential (V)</span>
+                </button>
               </div>
             </div>
 
@@ -311,17 +337,18 @@
                   <strong>Physics Challenge —</strong> Industrial exhaust filtration requires optimizing electric-field distribution to maximize sub-micron particulate matter capture while minimizing corona power loss.
                 </p>
                 <p class="project-detail-line">
-                  <strong>Simulation Solution —</strong> Designed and simulated a 2D electrostatic precipitator in COMSOL Multiphysics coupling electrostatics physics with charged particle-tracing dynamics to predict particle trajectory collection.
+                  <strong>Simulation Solution —</strong> Designed and simulated a 2D electrostatic precipitator in COMSOL Multiphysics coupling electrostatics physics (-15kV potential gradient) with laminar fluid flow (0-1.8 m/s) and charged particle-tracing dynamics to predict particle collection trajectories.
                 </p>
                 <p class="project-detail-line">
-                  <strong>Engineering Impact —</strong> Performed complex geometry modeling, non-uniform finite element meshing, and boundary-condition sweeps to determine optimal plate-to-wire spacing for maximum dust collection efficiency.
+                  <strong>Engineering Impact —</strong> Modeled a 0.7m multi-pin discharge channel, non-uniform finite element meshing, and boundary-condition sweeps to determine optimal plate-to-wire spacing for maximum dust collection efficiency.
                 </p>
               </div>
 
               <div class="project-stack-tags">
                 <span class="tag-badge tech-core">COMSOL Multiphysics</span>
-                <span class="tag-badge">Electrostatics</span>
+                <span class="tag-badge">Electrostatics (-15kV)</span>
                 <span class="tag-badge">Particle Tracing</span>
+                <span class="tag-badge">Laminar Fluid Flow</span>
                 <span class="tag-badge">Finite Element Meshing</span>
                 <span class="tag-badge">High-Voltage Physics</span>
               </div>

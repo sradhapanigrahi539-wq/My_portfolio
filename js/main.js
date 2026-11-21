@@ -260,6 +260,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Authentic COMSOL Simulation Multi-Plot Selector Switcher
+  const simThumbs = document.querySelectorAll('.sim-thumb');
+  const espMainMedia = document.getElementById('esp-main-media');
+  const espMainImg = document.getElementById('esp-main-img');
+  const espBadgeText = document.getElementById('esp-badge-text');
+
+  if (simThumbs.length && espMainMedia && espMainImg) {
+    simThumbs.forEach(thumb => {
+      thumb.addEventListener('click', (e) => {
+        e.stopPropagation();
+        simThumbs.forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+
+        const newSrc = thumb.getAttribute('data-img-src');
+        const newCaption = thumb.getAttribute('data-caption');
+        const badgeLabel = thumb.getAttribute('data-badge');
+
+        espMainImg.src = newSrc;
+        espMainMedia.setAttribute('data-lightbox-src', newSrc);
+        espMainMedia.setAttribute('data-lightbox-caption', newCaption);
+        if (espBadgeText) {
+          espBadgeText.innerHTML = `<i class="fa-solid fa-magnifying-glass-plus"></i> ${badgeLabel}`;
+        }
+      });
+    });
+  }
+
   function closeLightbox() {
     if (lightboxModal) {
       lightboxModal.classList.remove('active');

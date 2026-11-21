@@ -960,6 +960,91 @@ html[data-theme="light"] .project-tag {
   transform: scale(1.03);
 }
 
+/* Authentic COMSOL Simulation Multi-Plot Selector */
+.featured-media-column {
+  display: flex;
+  flex-direction: column;
+  background: #030816;
+  border-right: 1px solid var(--line-soft);
+  position: relative;
+}
+
+.featured-media-column .project-media-wrap {
+  aspect-ratio: 16 / 10;
+  background: #030816;
+  flex-grow: 1;
+}
+
+.featured-media-column .project-media-wrap img {
+  object-fit: contain;
+  background: #030816;
+}
+
+.simulation-gallery-strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  padding: 10px;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--line-soft);
+}
+
+.sim-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-recessed);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--text-muted);
+  text-align: center;
+  outline: none;
+}
+
+.sim-thumb img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 2px;
+  background: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s;
+}
+
+.sim-thumb:hover {
+  border-color: var(--accent-electric);
+  color: var(--text-main);
+  transform: translateY(-2px);
+}
+
+.sim-thumb.active {
+  border-color: var(--accent-electric);
+  background: rgba(135, 229, 44, 0.1);
+  color: var(--text-main);
+  box-shadow: 0 0 8px rgba(135, 229, 44, 0.25);
+}
+
+.sim-thumb.active span {
+  font-weight: 700;
+  color: var(--accent-electric);
+}
+
+[data-theme="light"] .sim-thumb.active span {
+  color: var(--primary-deep-navy);
+}
+
+@media (max-width: 640px) {
+  .simulation-gallery-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .media-badge-overlay {
   position: absolute;
   bottom: 12px;
