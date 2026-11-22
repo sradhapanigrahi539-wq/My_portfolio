@@ -7,7 +7,6 @@ Specialized in:
 - **High-Voltage Physics & Electrostatics** (COMSOL Multiphysics 2D Simulation, Particle Tracing)
 - **Substation Engineering & Grid SCADA** (TPSODL, 33kV/11kV Transformer Diagnostics, ETAP)
 - **Applied Embedded IoT & Edge Intelligence** (Raspberry Pi 5, ESP32, Nile Red Optical Detection)
-- **Taiwan MS Horizon** (Graduate research preparation for NTU, NTHU, NYCU, NTUST, NCU)
 
 ---
 
@@ -18,8 +17,8 @@ Specialized in:
 - **Text-to-Speech (TTS) Narration**: Native speech synthesizer that reads project summaries with animated soundwaves.
 - **Interactive Lightbox Modal**: High-resolution viewing of simulation vector fields and hardware prototypes.
 - **Dual Theme Support**: Seamless toggle between *Obsidian Substation (Dark)* and *Drafting Blueprint (Light)* mode.
-- **Taiwan MS Horizon**: Dedicated section detailing graduate research alignment with Taiwan's green energy transformation and advanced engineering labs.
-- **One-Click Inquiry Presets**: Dynamic inquiry form that generates structured messages for professors and collaborators.
+- **Interactive Multi-Plot COMSOL Gallery**: Authentic simulation data selector displaying particle trajectories, velocity fields, pressure contours, and potential gradients.
+- **One-Click Inquiry Presets**: Dynamic inquiry form that generates structured messages for industry and research collaborators.
 
 ---
 
@@ -47,6 +46,8 @@ Specialized in:
 ---
 
 ## 🚀 Live Deployment
+
+Live Portfolio: **[https://sradha-panigrahi.vercel.app](https://sradha-panigrahi.vercel.app)**
 
 Built with pure semantic HTML5, modern CSS3, and Vanilla JavaScript with no dependencies or build steps required.
 

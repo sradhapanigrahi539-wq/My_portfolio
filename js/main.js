@@ -324,9 +324,9 @@ document.addEventListener('DOMContentLoaded', () => {
       subject: 'Embedded Systems & AIoT Prototype Collaboration',
       message: 'Hello Sradha,\n\nI saw your PORTA-MP microplastic detector and Knock-pattern authentication hardware builds. We are exploring an applied embedded systems project.'
     },
-    'taiwan-ms': {
-      subject: 'Taiwan MS Graduate Research / Academic Discussion',
-      message: 'Hello Sradha,\n\nI came across your electrical engineering portfolio and noted your preparation for Master of Science programs in Taiwan (Power Systems / Multiphysics / Smart Grids).'
+    'research': {
+      subject: 'Graduate Research & Engineering Collaboration',
+      message: 'Hello Sradha,\n\nI came across your electrical engineering portfolio and would like to discuss potential research or engineering collaboration in power systems / multiphysics modeling.'
     }
   };
 

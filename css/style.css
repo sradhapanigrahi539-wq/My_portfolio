@@ -1378,105 +1378,6 @@ html[data-theme="light"] .competency-box h4 {
   color: var(--text-muted);
 }
 
-/* ---------- TAIWAN MS RESEARCH SPOTLIGHT ---------- */
-.taiwan-spotlight-card {
-  position: relative;
-  background: linear-gradient(135deg, var(--bg-card), var(--bg-recessed));
-  border: 1px solid var(--accent-voltage);
-  border-radius: var(--radius-lg);
-  padding: 42px;
-  box-shadow: 0 12px 36px var(--accent-voltage-glow);
-  overflow: hidden;
-}
-
-.taiwan-watermark-icon {
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  font-size: 180px;
-  color: var(--accent-voltage);
-  opacity: 0.05;
-  pointer-events: none;
-}
-
-.taiwan-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.taiwan-narrative h3 {
-  font-size: 28px;
-  margin-bottom: 14px;
-}
-
-.taiwan-narrative p {
-  font-size: 16px;
-  color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-.taiwan-target-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.target-uni-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 7px 14px;
-  background: var(--bg-card);
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-sm);
-  font-family: var(--font-mono);
-  font-size: 12.5px;
-  font-weight: 500;
-  color: var(--accent-voltage);
-}
-
-html[data-theme="light"] .target-uni-chip {
-  color: #071A4A;
-  border-color: rgba(7, 26, 74, 0.2);
-}
-
-.taiwan-pillars-box {
-  background: var(--bg-card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.pillar-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.pillar-item i {
-  font-size: 18px;
-  color: var(--accent-voltage);
-  margin-top: 3px;
-}
-
-.pillar-item strong {
-  display: block;
-  font-size: 14.5px;
-  color: var(--text-main);
-  margin-bottom: 2px;
-}
-
-.pillar-item p {
-  font-size: 13px;
-  color: var(--text-muted);
-}
-
 /* ---------- TECHNICAL COLLABORATION & INQUIRY ---------- */
 .inquiry-panel {
   background: var(--bg-card);
@@ -1839,10 +1740,6 @@ html[data-theme="light"] .footer-contact-entry i {
     grid-template-columns: 1fr;
   }
   
-  .taiwan-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .inquiry-grid {
     grid-template-columns: 1fr;
   }
@@ -1872,10 +1769,6 @@ html[data-theme="light"] .footer-contact-entry i {
   
   .inquiry-panel {
     padding: 24px 18px;
-  }
-  
-  .taiwan-spotlight-card {
-    padding: 28px 20px;
   }
   
   .footer-bottom-bar {
