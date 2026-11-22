@@ -960,22 +960,32 @@ html[data-theme="light"] .project-tag {
   transform: scale(1.03);
 }
 
-/* Authentic COMSOL Simulation Multi-Plot Selector */
-.featured-media-column {
+/* Authentic COMSOL Simulation Multi-Plot Selector & Multi-Media Columns */
+.featured-media-column,
+.card-media-column {
   display: flex;
   flex-direction: column;
   background: #030816;
-  border-right: 1px solid var(--line-soft);
   position: relative;
 }
 
-.featured-media-column .project-media-wrap {
+.featured-media-column {
+  border-right: 1px solid var(--line-soft);
+}
+
+.card-media-column {
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.featured-media-column .project-media-wrap,
+.card-media-column .project-media-wrap {
   aspect-ratio: 16 / 10;
   background: #030816;
   flex-grow: 1;
 }
 
-.featured-media-column .project-media-wrap img {
+.featured-media-column .project-media-wrap img,
+.card-media-column .project-media-wrap img {
   object-fit: contain;
   background: #030816;
 }

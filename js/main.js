@@ -260,32 +260,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Authentic COMSOL Simulation Multi-Plot Selector Switcher
-  const simThumbs = document.querySelectorAll('.sim-thumb');
-  const espMainMedia = document.getElementById('esp-main-media');
-  const espMainImg = document.getElementById('esp-main-img');
-  const espBadgeText = document.getElementById('esp-badge-text');
+  // Interactive Project Media Gallery Switcher (Modular for COMSOL & PORTA-MP)
+  document.querySelectorAll('.simulation-gallery-strip').forEach(strip => {
+    const parentContainer = strip.closest('.featured-media-column, .card-media-column, .project-card') || strip.parentElement;
+    const mainMedia = parentContainer.querySelector('.project-media-wrap');
+    const mainImg = mainMedia ? mainMedia.querySelector('img') : null;
+    const badgeText = mainMedia ? mainMedia.querySelector('.media-badge-overlay') : null;
+    const thumbs = strip.querySelectorAll('.sim-thumb');
 
-  if (simThumbs.length && espMainMedia && espMainImg) {
-    simThumbs.forEach(thumb => {
-      thumb.addEventListener('click', (e) => {
-        e.stopPropagation();
-        simThumbs.forEach(t => t.classList.remove('active'));
-        thumb.classList.add('active');
+    if (mainMedia && mainImg && thumbs.length) {
+      thumbs.forEach(thumb => {
+        thumb.addEventListener('click', (e) => {
+          e.stopPropagation();
+          thumbs.forEach(t => t.classList.remove('active'));
+          thumb.classList.add('active');
 
-        const newSrc = thumb.getAttribute('data-img-src');
-        const newCaption = thumb.getAttribute('data-caption');
-        const badgeLabel = thumb.getAttribute('data-badge');
+          const newSrc = thumb.getAttribute('data-img-src');
+          const newCaption = thumb.getAttribute('data-caption');
+          const badgeLabel = thumb.getAttribute('data-badge');
 
-        espMainImg.src = newSrc;
-        espMainMedia.setAttribute('data-lightbox-src', newSrc);
-        espMainMedia.setAttribute('data-lightbox-caption', newCaption);
-        if (espBadgeText) {
-          espBadgeText.innerHTML = `<i class="fa-solid fa-magnifying-glass-plus"></i> ${badgeLabel}`;
-        }
+          mainImg.src = newSrc;
+          mainMedia.setAttribute('data-lightbox-src', newSrc);
+          mainMedia.setAttribute('data-lightbox-caption', newCaption);
+          if (badgeText) {
+            badgeText.innerHTML = `<i class="fa-solid fa-magnifying-glass-plus"></i> ${badgeLabel}`;
+          }
+        });
       });
-    });
-  }
+    }
+  });
 
   function closeLightbox() {
     if (lightboxModal) {
