@@ -17,25 +17,31 @@
   --bg-card: #FFFFFF;
   --bg-recessed: #eef0f4;
   --bg-elevated: #E5E7EB;
-  
+
   --line: rgba(7, 26, 74, 0.10);
   --line-strong: rgba(7, 26, 74, 0.18);
   --line-soft: rgba(7, 26, 74, 0.05);
-  
-  --text-main: #071A4A;          /* Swatch #071A4A */
-  --text-muted: #4B5563;         /* Swatch #4B5563 */
+
+  --text-main: #071A4A;
+  /* Swatch #071A4A */
+  --text-muted: #4B5563;
+  /* Swatch #4B5563 */
   --text-faint: #6B7280;
-  
+
   /* Domain Accent Colors */
-  --accent-voltage: #87E52C;     /* Swatch #87E52C Electric Lime */
+  --accent-voltage: #87E52C;
+  /* Swatch #87E52C Electric Lime */
   --accent-voltage-glow: rgba(135, 229, 44, 0.25);
   --accent-energy: #87E52C;
   --accent-energy-glow: rgba(135, 229, 44, 0.25);
-  --accent-navy: #071A4A;        /* Swatch #071A4A */
-  --accent-amber: #D97706;       /* Transformer / Hazard Amber */
+  --accent-navy: #071A4A;
+  /* Swatch #071A4A */
+  --accent-amber: #D97706;
+  /* Transformer / Hazard Amber */
   --accent-amber-glow: rgba(217, 119, 6, 0.2);
-  --accent-purple: #071A4A;      /* Deep Navy brand accent */
-  
+  --accent-purple: #071A4A;
+  /* Deep Navy brand accent */
+
   --shadow-sm: 0 1px 3px rgba(7, 26, 74, 0.06), 0 1px 2px rgba(7, 26, 74, 0.04);
   --shadow-md: 0 4px 16px rgba(7, 26, 74, 0.08), 0 2px 4px rgba(7, 26, 74, 0.04);
   --shadow-lg: 0 16px 36px rgba(7, 26, 74, 0.12);
@@ -49,7 +55,7 @@
   --radius-md: 12px;
   --radius-lg: 18px;
   --radius-full: 9999px;
-  
+
   --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
   color-scheme: light;
@@ -57,20 +63,26 @@
 
 html[data-theme="dark"] {
   /* VIBE2CODE Midnight Navy & Electric Lime Dark Mode */
-  --bg-primary: #030A1C;         /* Deepest midnight navy foundation */
-  --bg-card: #071A4A;            /* Exact Swatch #071A4A */
-  --bg-recessed: #0A215C;        /* Rich elevated navy */
+  --bg-primary: #030A1C;
+  /* Deepest midnight navy foundation */
+  --bg-card: #071A4A;
+  /* Exact Swatch #071A4A */
+  --bg-recessed: #0A215C;
+  /* Rich elevated navy */
   --bg-elevated: #0F2D7D;
-  
-  --line: rgba(229, 231, 235, 0.11);    /* Derived from Swatch #E5E7EB */
+
+  --line: rgba(229, 231, 235, 0.11);
+  /* Derived from Swatch #E5E7EB */
   --line-strong: rgba(229, 231, 235, 0.20);
   --line-soft: rgba(229, 231, 235, 0.05);
-  
-  --text-main: #F8FAFC;          /* Swatch #F8FAFC */
+
+  --text-main: #F8FAFC;
+  /* Swatch #F8FAFC */
   --text-muted: #CBD5E1;
   --text-faint: #94A3B8;
-  
-  --accent-voltage: #87E52C;     /* Swatch #87E52C */
+
+  --accent-voltage: #87E52C;
+  /* Swatch #87E52C */
   --accent-voltage-glow: rgba(135, 229, 44, 0.35);
   --accent-energy: #87E52C;
   --accent-energy-glow: rgba(135, 229, 44, 0.35);
@@ -78,7 +90,7 @@ html[data-theme="dark"] {
   --accent-amber: #FBBF24;
   --accent-amber-glow: rgba(251, 191, 36, 0.28);
   --accent-purple: #87E52C;
-  
+
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.45);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.55);
   --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.75);
@@ -86,7 +98,9 @@ html[data-theme="dark"] {
 }
 
 /* ---------- Reset & Base ---------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -129,7 +143,11 @@ button {
   color: inherit;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: var(--font-display);
   font-weight: 700;
   line-height: 1.2;
@@ -155,7 +173,7 @@ p {
   pointer-events: none;
   z-index: 0;
   background-size: 40px 40px;
-  background-image: 
+  background-image:
     linear-gradient(to right, var(--line-soft) 1px, transparent 1px),
     linear-gradient(to bottom, var(--line-soft) 1px, transparent 1px);
   mask-image: radial-gradient(circle at 50% 30%, black 40%, transparent 85%);
@@ -241,8 +259,15 @@ html[data-theme="dark"] .site-nav {
 }
 
 @keyframes pulse-ring {
-  0% { transform: scale(1); opacity: 0.9; }
-  100% { transform: scale(2.4); opacity: 0; }
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
 }
 
 .nav-links {
@@ -313,10 +338,22 @@ html[data-theme="light"] .nav-links a.active {
   transform: translateY(-1px);
 }
 
-.theme-toggle .icon-sun { display: none; }
-.theme-toggle .icon-moon { display: block; }
-html[data-theme="dark"] .theme-toggle .icon-sun { display: block; color: var(--accent-voltage); }
-html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+.theme-toggle .icon-moon {
+  display: block;
+}
+
+html[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+  color: var(--accent-voltage);
+}
+
+html[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
 
 .nav-toggle {
   display: none;
@@ -534,7 +571,9 @@ html[data-theme="dark"] .grid-busbar {
 }
 
 @keyframes grid-pulse-flow {
-  to { stroke-dashoffset: -400; }
+  to {
+    stroke-dashoffset: -400;
+  }
 }
 
 .hero-grid {
@@ -583,7 +622,9 @@ html[data-theme="light"] .hero-typewriter-box {
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-lede {
@@ -656,8 +697,13 @@ html[data-theme="light"] .hero-contact-strip a:hover {
 }
 
 @keyframes dial-rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .portrait-photo-clip {
@@ -724,9 +770,26 @@ html[data-theme="light"] .hero-contact-strip a:hover {
   right: -24px;
 }
 
-.orbit-dot-voltage { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-voltage); }
-.orbit-dot-energy { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-voltage); }
-.orbit-dot-purple { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-voltage); }
+.orbit-dot-voltage {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-voltage);
+}
+
+.orbit-dot-energy {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-voltage);
+}
+
+.orbit-dot-purple {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-voltage);
+}
 
 /* ---------- INSTRUMENT PANEL / SPEC STRIP ---------- */
 .spec-strip {
@@ -779,7 +842,8 @@ html[data-theme="light"] .hero-contact-strip a:hover {
   stroke: var(--accent-voltage);
   stroke-width: 4.5;
   stroke-linecap: round;
-  stroke-dasharray: 169.6; /* 2 * PI * 27 */
+  stroke-dasharray: 169.6;
+  /* 2 * PI * 27 */
   stroke-dashoffset: 169.6;
   transition: stroke-dashoffset 1.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -936,8 +1000,15 @@ html[data-theme="light"] .project-tag {
 }
 
 @keyframes pulse-audio {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(135, 229, 44, 0.4); }
-  100% { transform: scale(1.08); box-shadow: 0 0 0 8px rgba(135, 229, 44, 0); }
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(135, 229, 44, 0.4);
+  }
+
+  100% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 8px rgba(135, 229, 44, 0);
+  }
 }
 
 /* Project Visual Preview */
@@ -1471,7 +1542,8 @@ html[data-theme="dark"] .template-btn:hover {
   letter-spacing: 0.05em;
 }
 
-.form-input, .form-textarea {
+.form-input,
+.form-textarea {
   width: 100%;
   padding: 12px 16px;
   background: var(--bg-recessed);
@@ -1483,7 +1555,8 @@ html[data-theme="dark"] .template-btn:hover {
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-.form-input:focus, .form-textarea:focus {
+.form-input:focus,
+.form-textarea:focus {
   outline: none;
   border-color: var(--accent-voltage);
   box-shadow: 0 0 0 3px var(--accent-voltage-glow);
@@ -1716,44 +1789,44 @@ html[data-theme="light"] .footer-contact-entry i {
     text-align: center;
     gap: 40px;
   }
-  
+
   .hero-content {
     align-items: center;
   }
-  
+
   .hero-actions {
     justify-content: center;
   }
-  
+
   .hero-contact-strip {
     justify-content: center;
   }
-  
+
   .spec-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .project-card.featured-card {
     grid-column: span 1;
     grid-template-columns: 1fr;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .competency-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .honor-card-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .inquiry-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-top-grid {
     grid-template-columns: 1fr;
     gap: 36px;
@@ -1764,23 +1837,23 @@ html[data-theme="light"] .footer-contact-entry i {
   .nav-links {
     display: none;
   }
-  
+
   .nav-toggle {
     display: flex;
   }
-  
+
   .spec-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .dossier-card {
     padding: 24px 18px;
   }
-  
+
   .inquiry-panel {
     padding: 24px 18px;
   }
-  
+
   .footer-bottom-bar {
     flex-direction: column;
     gap: 12px;
